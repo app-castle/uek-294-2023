@@ -1,0 +1,8 @@
+<p>home works!</p>
+
+<div *ngIf="blogposts">
+  <article *ngFor="let post of blogposts">
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.text }}</p>
+  </article>
+</div>

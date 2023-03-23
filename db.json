@@ -1,0 +1,19 @@
+{
+  "blogposts": [
+    {
+      "id": 1,
+      "title": "Hello World",
+      "text": "lorem ipsum dolor sit amet"
+    },
+    {
+      "id": 2,
+      "title": "Hello BiCT",
+      "text": "blabla blabla lb lalf"
+    },
+    {
+      "id": 3,
+      "title": "Another one",
+      "text": "sdlfhsdf hsd fjdsoif sdof"
+    }
+  ]
+}
