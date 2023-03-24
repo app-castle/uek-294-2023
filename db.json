@@ -1,4 +1,11 @@
 {
+  "users": [
+    {
+      "email": "markus@appcastle.ch",
+      "password": "$2a$10$RHFoyG98K3qLVPekW8rrO.XAsoq8WS5weijq.hFPZARZ5w81HElFm",
+      "id": 1
+    }
+  ],
   "blogposts": [
     {
       "id": 1,
