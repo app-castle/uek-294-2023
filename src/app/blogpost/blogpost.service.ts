@@ -14,4 +14,8 @@ export class BlogpostService {
     );
     return request;
   }
+
+  public getOnePost(id: number) {
+    return this.http.get<Blogpost>('http://localhost:3000/blogposts/' + id);
+  }
 }
