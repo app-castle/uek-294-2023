@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 import { UserService } from './user.service';
 
 @Component({
@@ -11,7 +12,7 @@ import { UserService } from './user.service';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent {
-  constructor(private userService: UserService) {}
+  constructor(private userService: UserService, private router: Router) {}
 
   public onLogin(form: NgForm) {
     // abbrechen wenn form invalid ist
@@ -24,6 +25,7 @@ export class LoginComponent {
     // login request abschicken und token in session storage speichern
     this.userService.login(email, password).subscribe((result) => {
       sessionStorage.setItem('auth-token', result.accessToken);
+      this.router.navigate(['/']);
     });
   }
 }
