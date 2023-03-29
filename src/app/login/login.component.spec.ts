@@ -62,7 +62,10 @@ describe('LoginComponent', () => {
     component.onLogin(form);
 
     // assert
-    expect(service.login).toHaveBeenCalled();
+    expect(service.login).toHaveBeenCalledOnceWith(
+      'example@test.com',
+      'blablapassword'
+    );
   });
 
   it('has an auth token in the session storage after login', () => {
